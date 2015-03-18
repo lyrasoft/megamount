@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="http://asukademy.com/media/favicon.ico" />
+
+        <title>{% block title %}MEGAMOUNT 百岳國際{% endblock %}</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{{ uri.media }}css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="{{ uri.media }}css/prototype.css" rel="stylesheet">
+        <link href="{{ uri.media }}css/cover.css" rel="stylesheet">
+        <link href="{{ uri.media }}css/project.css" rel="stylesheet">
+
+        {% block stylesheet %}{% endblock %}
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{{ uri.media }}js/jquery.js"></script>
+        <script src="{{ uri.media }}js/bootstrap.min.js"></script>
+
+        {% block script %}{% endblock %}
+    </head>
+    <body>
+
+    {% block body %}{% endblock %}
+
+    </body>
+</html>
