@@ -1,7 +1,10 @@
 /* Megamount Prototype Custom CSS */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 /* GLOBAL */
 .cover-heading {
   font-size: 125px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
 }
 @media (max-width: 764px) {
   .cover-heading {
