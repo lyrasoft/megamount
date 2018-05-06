@@ -27,6 +27,7 @@ a:hover {
 }
 .mega-logo-img {
   height: 30vh;
+  min-height: 200px;
 }
 .bottom-link {
   position: fixed;
