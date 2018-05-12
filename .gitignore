@@ -3,7 +3,9 @@
 !.gitignore
 !.gitkeep
 
+# Project
 !/.vaseman
+node_modules
 
 # Video
 asset/video
