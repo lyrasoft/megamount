@@ -1,0 +1,145 @@
+// Megamount main.css
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+// Bootstrap
+@import "variables";
+@import "utilities";
+
+// Main CSS start
+// ---------------------------------------------
+
+// Global
+html, body {
+  font-family: $main-font;
+}
+
+// Header
+.main-header {
+  color: white;
+  overflow: hidden;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+      text-decoration: none;
+    }
+  }
+
+  .header-logo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header-menu {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .bg-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .header-container {
+    height: 100vh;
+    position: relative;
+    background: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 27%, rgba(0, 0, 0, 0));
+  }
+
+  .mega-logo-img {
+    width: 200px;
+  }
+
+  // Banner
+  .main-banner {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(-40%);
+      width: 500px;
+      height: 500px;
+      border: 96px solid rgba(255, 255, 255, .2);
+      border-radius: 50%;
+    }
+  }
+
+  .banner-inner {
+    position: relative;
+  }
+
+  .main-slogan {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+
+  .sub-slogan {
+    margin-top: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    font-family: 'Libre Baskerville',YuMincho,'Yu Mincho','游明朝体','ヒラギノ明朝 ProN',"ヒラギノ明朝 ProN","Hiragino Mincho ProN","Kozuka Mincho Pro",'Songti TC','PingFang TC','Heiti TC','微軟正黑體',sans-serif;
+  }
+
+  .banner-actions {
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 447px) {
+    .header-menu {
+      .nav-link {
+        font-size: 3.5vw;
+        padding: .5rem 2.75vw;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .main-banner {
+      position: relative;
+
+      &:before {
+        width: 67vw;
+        height: 67vw;
+        border-width: 12.6vw;
+      }
+    }
+
+    .bg-video {
+      object-position: 58% center;
+    }
+
+    .header-container {
+      background: none;
+    }
+
+    .main-slogan {
+      font-size: 6.5vw;
+      letter-spacing: 2vw;
+    }
+
+    .sub-slogan {
+      font-size: 3vw;
+      letter-spacing: 2vw;
+    }
+  }
+}
