@@ -7289,7 +7289,9 @@ html, body {
 
 .main-header {
   color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url("../images/banner-poster2.jpg") 58% center;
+  background-size: cover; }
   .main-header a {
     color: white; }
     .main-header a:hover {
