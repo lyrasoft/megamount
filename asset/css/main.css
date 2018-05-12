@@ -7315,9 +7315,7 @@ html, body {
     top: 0; }
   .main-header .header-container {
     height: 100vh;
-    position: relative;
-    background: -o-radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0));
-    background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0)); }
+    position: relative; }
   .main-header .mega-logo-img {
     width: 200px; }
   .main-header .main-banner {
@@ -7333,7 +7331,7 @@ html, body {
               transform: translateX(-50%) translateY(-40%);
       width: 500px;
       height: 500px;
-      border: 96px solid rgba(255, 255, 255, 0.2);
+      border: 96px solid rgba(255, 255, 255, 0.1);
       border-radius: 50%; }
   .main-header .banner-inner {
     position: relative; }
