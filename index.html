@@ -28,11 +28,13 @@
 
         <script>
           // Video
-          var video = 'asset/video/31472983.mp4';
+          var src = 'asset/video/Background - 9584.mp4';
+          var video = document.querySelector('.bg-video');
           var md = new MobileDetect(window.navigator.userAgent);
 
           if (!md.mobile()) {
-            document.querySelector('.bg-video').setAttribute('src', video);
+            video.setAttribute('src', src);
+            // video.playbackRate = 3;
           }
         </script>
 
