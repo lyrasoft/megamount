@@ -13,6 +13,7 @@
 // Global
 html, body {
   font-family: $main-font;
+  color: #333;
 }
 
 // Header
@@ -150,5 +151,15 @@ html, body {
       font-size: 3vw;
       letter-spacing: 2vw;
     }
+  }
+}
+
+.l-section:nth-child(even) {
+  background-color: $gray-200;
+}
+
+.c-partner {
+  &__image {
+    height: 100px;
   }
 }
