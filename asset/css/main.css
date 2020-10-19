@@ -8350,7 +8350,7 @@ html, body {
     z-index: 5; }
   .main-header .bg-video {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center center;
