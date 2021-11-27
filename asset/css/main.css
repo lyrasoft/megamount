@@ -8378,7 +8378,9 @@ html, body {
       width: 500px;
       height: 500px;
       border: 96px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-backdrop-filter: blur(8px);
+              backdrop-filter: blur(8px); }
   .main-header .banner-inner {
     position: relative; }
   .main-header .main-slogan {
